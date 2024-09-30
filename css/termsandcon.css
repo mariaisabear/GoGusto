@@ -1,0 +1,179 @@
+/* Global Styles */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+background-color: #ffffff;
+line-height: 1.5;
+margin: 0;
+padding: 0;
+}
+
+p {
+color: #3C3633;
+font-size: 0.8rem;
+}
+
+/* NAVBAR */
+.navbar {
+  color: #3C3633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  background-color: #ffffff70;
+  border-bottom: none;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+  background-color: #ffffff;
+  color: #3C3633;
+}
+
+.brand-name {
+  color: #FF7D29;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-name:hover {
+  color: #FF7D29;
+}
+
+.custom-nav-link {
+  padding: 10px 20px !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3C3633;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF7D29;
+}
+
+.nav-link.active {
+  color: #FF7D29 !important;
+  border-bottom: 2px solid #FF7D29;
+}
+
+/* Plan Your Trip Button */
+.custom-btn {
+  background-color: #FF7D29;
+  color: #ffffff;
+  border: none;
+  animation-delay: 1.5s;
+}
+
+.custom-btn:hover {
+  background-color: #de6d21; /* Change to a darker shade on hover */
+  color: #ffffff; /* Text color */
+}
+
+/* TERMS SECTION */
+.terms-section {
+  margin-top: 50px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.terms-section {
+  margin-top: 40px; /* Space between navbar and section */
+}
+
+.terms-content h2.title, .terms-content h3.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #FF7D29;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.terms-content p, .terms-content ul {
+  color: #3C3633;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.terms-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.terms-content ul li {
+  margin-bottom: 10px;
+}
+
+.terms-content strong {
+  color: #FF7D29;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  color: #3C3633;
+  margin-top: 80px;
+  margin-bottom: 0 !important;
+  padding: 15px;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+}
+  
+.p-footer {
+  color: #3C3633;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+  
+/* Social Media Icons */
+
+.social-links {
+  margin: 10px;
+  text-align: center;
+}
+  
+.social-links a {
+  margin: 0 15px;
+  color: #3C3633;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+  
+.social-links a:hover {
+  color: #FF7D29;
+  transform: scale(1.2);
+}
+  
+.social-icon {
+  font-size: 24px; /* Adjust icon size */
+  margin: 0 10px; /* Spacing between icons */
+  color: #3C3633; /* Icon color */
+  transition: color 0.3s ease;
+}
+  
+.social-icon:hover {
+  color: #FF7D29; /* Change color on hover */
+}
+  
+/* Remove any extra decorations, dashes, or borders */
+.social-icon i {
+  text-decoration: none;
+  display: inline-block;
+}
+  
+a {
+  text-decoration: none;
+}

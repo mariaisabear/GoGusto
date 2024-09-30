@@ -1,0 +1,410 @@
+/* GLOBAL */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #3C3633;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+p {
+  color: #3C3633;
+  font-size: 0.8rem;
+}
+
+p {
+  color: #222222;
+  font-size: 0.8rem;
+}
+
+/* HEADER */
+header {
+  background-color: #f4ead2;
+  background-size: cover;
+  color: #3C3633;
+}
+
+/* NAVBAR */
+.navbar {
+  color: #3C3633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  background-color: #ffffff70;
+  border-bottom: none;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+  background-color: #ffffff;
+  color: #3C3633;
+}
+
+.brand-name {
+  color: #FF7D29;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-name:hover {
+  color: #FF7D29;
+}
+
+.custom-nav-link {
+  padding: 10px 20px !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3C3633;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF7D29;
+}
+
+.nav-link.active {
+  color: #FF7D29 !important;
+  border-bottom: 2px solid #FF7D29;
+}
+
+/* Plan Your Trip Button */
+.custom-btn {
+  background-color: #FF7D29;
+  color: #ffffff;
+  border: none;
+  animation-delay: 1.5s;
+}
+
+.custom-btn:hover {
+  background-color: #de6d21; /* Change to a darker shade on hover */
+  color: #ffffff; /* Text color */
+}
+
+/* HEADER SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('../images/aerial.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent white overlay */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 1000px;
+  text-align: justify;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Plan Your Trip Button */
+.package-btn {
+  background-color: #FF7D29;
+  color: #ffffff;
+  border: none;
+  animation-delay: 1.5s;
+}
+
+.package-btn:hover {
+  background-color: #de6d21; /* Change to a darker shade on hover */
+  color: #ffffff; /* Text color */
+}
+
+.package-btn i {
+  margin-left: 5px; /* Add some space between text and icon */
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2em;
+  }
+  .hero p {
+      font-size: 1em;
+  }
+}
+
+/* TOUR PACKAGE */
+
+.tour-packages {
+  margin: 100px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #3C3633;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #3C3633;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.collapsible {
+  background-color: #FF7D29;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  font-family: "Frank Ruhl Libre", serif;
+  margin: 0 auto 10px auto; 
+  display: block;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.collapsible:hover {
+  background-color: #d16f2d;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  width: 80%; 
+  max-width: 800px; 
+  margin: 0 auto 10px auto; 
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f5f5f5;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border: none; 
+}
+
+.content p{
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.active .collapsible:active {
+  background-color: #d16f2d;
+}
+
+.collapsible + .content {
+  margin-top: -10px;
+}
+
+/* Collapsible Animation */
+.content.show {
+  max-height: 300px; 
+}
+
+/* Indicator Styles */
+.indicator {
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate indicator when content is expanded */
+.collapsible.active .indicator {
+  transform: rotate(135deg); 
+}
+
+.schedule-table {
+  width: 100%; /* Full width for the table */
+  border-collapse: collapse; /* Collapse borders */
+  margin-top: 20px; /* Add space above the table */
+  margin-bottom: 20px;
+}
+
+.schedule-table th, .schedule-table td {
+  padding: 10px; /* Add padding for cells */
+  border: 1px solid #ccc; /* Border for table cells */
+  text-align: left; /* Align text to the left */
+}
+
+.schedule-table th {
+  background-color: #6482AD; /* Header background color */
+  color: #ffffff; /* Header text color */
+  font-weight: bold; /* Make header text bold */
+}
+
+.schedule-table td {
+  background-color: #f9f9f9; /* Background color for table cells */
+}
+
+.schedule-table tr:nth-child(even) td {
+  background-color: #f2f2f2; /* Stripe effect for even rows */
+}
+  
+/* FOOTER */
+footer {
+  background-color: #f5f5f5;
+  color: #3C3633;
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+  padding: 15px;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+}
+
+.p-footer {
+  color: #3C3633;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.social-links {
+  margin: 10px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: #3C3633;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #FF7D29;
+  transform: scale(1.2);
+}
+
+.social-icon {
+  font-size: 24px; /* Adjust icon size */
+  margin: 0 10px; /* Spacing between icons */
+  color: #3C3633; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #FF7D29; /* Change color on hover */
+}
+
+/* Remove any extra decorations, dashes, or borders */
+.social-icon i {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+/* END OF FOOTER SECTION */
+
+/* RESPONSIVE */
+/* Hero Section - Mobile Adjustments */
+@media (max-width: 576px) { /* Targeting mobile devices */
+  
+  .hero h1 {
+      font-size: 1.7rem; /* Smaller font for mobile */
+      text-align: center; /* Ensure text stays centered */
+      margin-bottom: 10px;
+  }
+
+  .hero p {
+      font-size: 0rem; /* Adjust paragraph font size for mobile */
+  }
+
+  /* Collapsible Section - Mobile Adjustments */
+  .collapsible {
+      width: 200%; /* Adjust width for mobile */
+      max-width: 200%; /* Make collapsible wider for mobile */
+      font-size: 1.2rem; /* Slightly smaller font size */
+      padding: 12px; /* Reduce padding for a more compact look */
+      align-self: center;
+      margin-left: -60px;
+  }
+
+  .content {
+      width: 200%; /* Adjust content width for collapsible on mobile */
+      max-width: 200%; /* Ensure collapsible content matches */
+      font-size: 0.9rem; /* Adjust text size in collapsible content */
+      margin-left: -60px;
+  }
+
+  .content p {
+      font-size: 0.9rem; /* Adjust paragraph size inside collapsible */
+      text-align: left; /* Align text to the left for better readability */
+      padding: 5px; /* Reduce padding inside the collapsible */
+  }
+
+  /* Section Title - Mobile Adjustments */
+  .section-title {
+      font-size: 1.8rem; /* Reduce font size of section title for mobile */
+      text-align: center; /* Ensure title is centered */
+      margin-bottom: 10px; /* Reduce bottom margin */
+  }
+
+  .section-subtitle {
+      font-size: 1.4rem; /* Adjust subtitle for mobile readability */
+      text-align: center; /* Ensure subtitle stays centered */
+      margin-bottom: 10px; /* Adjust bottom margin */
+  }
+
+  /* Adjusting collapsible indicator for mobile */
+  .indicator {
+      font-size: 1.5rem; /* Make the indicator larger for mobile */
+  }
+
+  /* Adjusting table inside collapsible */
+  .schedule-table th, .schedule-table td {
+      font-size: 0.8rem; /* Smaller table font size for mobile */
+      padding: 5px; /* Reduce padding inside table cells */
+  }
+
+  .schedule-table {
+      margin-top: 10px; /* Reduce margin above the table */
+  }
+  .hero-content {
+    padding: 0;
+  }
+}

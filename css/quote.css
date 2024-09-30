@@ -1,0 +1,352 @@
+/* Global Styles */
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+  background-color: #f5f5f5;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  }
+  
+  p {
+  color: #222222;
+  font-size: 0.8rem;
+  }
+  
+  /* Header */
+  header {
+  background-color: #ffffff;
+  background-size: cover;
+  color: #222222;
+  }
+  
+  h1 {
+  color: #3C3633;
+  font-size: 3rem;
+  font-weight: bold;
+  }
+  
+  /* NAVBAR */
+.navbar {
+  color: #3C3633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  background-color: #ffffff70;
+  border-bottom: none;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+  background-color: #ffffff;
+}
+
+.brand-name {
+  color: #FF7D29;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-name:hover {
+  color: #FF7D29;
+}
+
+.custom-nav-link {
+  padding: 10px 20px !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3C3633;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF7D29;
+}
+
+.nav-link.active {
+  color: #FF7D29 !important;
+  border-bottom: 2px solid #FF7D29;
+}
+  
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.text {
+  width: 100%;
+  max-width: 1200px;
+  color: #f5f5f5;
+  margin: auto;
+  padding: 40px 35px;
+  text-align: left;
+}
+
+.nav-link {
+  color: #1c1c1c; /* Setting the font color */
+  text-decoration: none; /* Removing underlines from links */
+  padding: 5px 15px; /* Adding padding for better readability */
+  transition: color 0.3s; /* Adding transition effect on color change */
+}
+
+.nav-link:hover {
+  color: #b24a3b; /* Changing font color on hover */
+}
+
+/* Plan Your Trip Button */
+.custom-btn {
+  background-color: #FF7D29 !important;
+  color: #ffffff;
+  border: none;
+  animation-delay: 1.5s;
+}
+
+.custom-btn:hover {
+  background-color: #de6d21; /* Change to a darker shade on hover */
+  color: #ffffff; /* Text color */
+}
+
+.btn.active {
+  color: #ffffff;
+}
+
+/* FORM STYLE */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.form label {
+  position: relative;
+  margin-bottom: 15px; /* Add bottom margin for spacing */
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: rgb(175, 173, 173);
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: #FF7D29;
+}
+
+.placeholder {
+  position: absolute;
+  left: 10px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical alignment */
+  color: rgb(175, 173, 173);
+  font-size: 0.9em;
+  transition: 0.3s ease; /* Smooth transition */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.input:focus + span,
+.input:valid + span {
+  top: -10px; /* Move label up when focused or valid */
+  font-size: 0.7em; /* Smaller size when active */
+  font-weight: 600;
+  color: #FF7D29; /* Change color when active */
+}
+
+.input:focus + span + .placeholder,
+.input:not(:placeholder-shown) + span + .placeholder {
+  display: none; /* Hide when focused or has value */
+}
+
+input[type="file"] {
+  padding: 10px; /* Add some padding for file inputs */
+}
+
+.title {
+  font-size: 32px;
+  color: #FF7D29;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #FF7D29;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #FF7D29;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message {
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.71);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #FF7D29;
+}
+
+.signin a:hover {
+  text-decoration: underline #de6d21;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+background-color: #FF7D29;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-align: center;
+margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+background-color: #de6d21;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+  
+  /* Footer */
+  footer {
+  background-color: #f5f5f5;
+  color: #3C3633;
+  margin-top: 80px;
+  margin-bottom: 0 !important;
+  padding: 15px;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  }
+  
+  .p-footer {
+  color: #3C3633;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+  }
+  
+  /* Social Media Icons */
+  
+  .social-links {
+  margin: 10px;
+  text-align: center;
+  }
+  
+  .social-links a {
+  margin: 0 15px;
+  color: #3C3633;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+  color: #FF7D29;
+  transform: scale(1.2);
+  }
+  
+  .social-icon {
+  font-size: 24px; /* Adjust icon size */
+  margin: 0 10px; /* Spacing between icons */
+  color: #3C3633; /* Icon color */
+  transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+  color: #FF7D29; /* Change color on hover */
+  }
+  
+  /* Remove any extra decorations, dashes, or borders */
+  .social-icon i {
+  text-decoration: none;
+  display: inline-block;
+  }
+  
+  a {
+  text-decoration: none;
+  }

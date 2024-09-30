@@ -1,0 +1,363 @@
+/* GLOBAL STYLES */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    background-size: cover;
+    color: #3C3633;
+}
+
+h1 {
+    color: #3C3633;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    color: #3C3633;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FF7D29;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #3C3633;
+    text-transform: uppercase;
+}
+
+/* NAVBAR */
+.navbar {
+    color: #3C3633;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+    background-color: #ffffff70;
+    border-bottom: none;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+  
+.navbar.scrolled {
+    background-color: #ffffff;
+    color: #3C3633;
+}
+  
+.brand-name {
+    color: #FF7D29;
+    font-size: 24px;
+    font-weight: bold;
+}
+  
+.brand-name:hover {
+    color: #FF7D29;
+}
+  
+.custom-nav-link {
+    padding: 10px 20px !important;
+}
+  
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #3C3633;
+}
+  
+.navbar-nav .nav-link:hover {
+    color: #FF7D29;
+}
+  
+.nav-link.active {
+    color: #FF7D29 !important;
+    border-bottom: 2px solid #FF7D29;
+}
+  
+/* Plan Your Trip Button */
+.custom-btn {
+    background-color: #FF7D29;
+    color: #ffffff;
+    border: none;
+    animation-delay: 1.5s;
+}
+  
+.custom-btn:hover {
+    background-color: #de6d21; /* Change to a darker shade on hover */
+    color: #ffffff; /* Text color */
+}
+/* END OF NAVBAR CSS */
+
+/* IMAGE BANNER SECTION */
+.image-banner-section {
+    margin-top: 80px; /* Adjust based on navbar height */
+    padding: 0;
+    top: 80px; /* Adjust based on navbar height */
+    z-index: 999; /* Ensures it stays above other content */
+}
+
+.image-banner-section img.banner-image {
+    width: 100%; /* Image takes full width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 250px; /* Restrict minimum height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block; /* Removes any extra space around the image */
+}
+
+.container-fluid {
+    padding: 0;
+}
+/* END OF IMAGE BANNER SECTION */
+
+/* ABOUT SECTION */
+.about-section {
+    margin-top: 50px;
+}
+
+.about-content {
+    padding: 0 100px;
+}
+
+.about-content img{
+    width: 500px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* END OF ABOUT SECTION */
+
+/* MISSION AND VISION SECTION */
+.mission-vision-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-vision-section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    width: 100%;
+    text-align: justify;
+}
+
+.mission-vision-section .col {
+    /* width: 45%;  Width of each column 
+    text-align: left; Center the text */
+    flex: 1; /* Make each column take equal space */
+    padding: 0 60px; /* Add padding for spacing */
+}
+
+.mission-vision-section .col-divider {
+    width: 1px;
+    background-color: lightgray;
+    height: auto;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters > [class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.mission-vision-section h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* END OF MISSION AND VISION SECTION */
+
+/* ACCREDITATION SECTION */
+.accreditation-section {
+    margin-top: 20px;
+}
+
+.accreditation-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accreditation-section ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.accreditation-section li {
+    margin-bottom: 10px;
+}
+
+.accreditation-section i {
+    color: #FF7D29;
+    margin-right: 10px;
+}
+
+.accreditation-logo {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+/* END OF ACCREDITATION SECTION */
+
+/* FOOTER */
+footer {
+    background-color: #f5f5f5;
+    color: #3C3633;
+    margin-top: 80px;
+    margin-bottom: 0 !important;
+    padding: 15px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+.p-footer {
+    color: #3C3633;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.p-footer p {
+    font-size: 0.8rem;
+}
+
+/* Social Media Icons */
+
+.social-links {
+    margin: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 15px;
+    color: #3C3633;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FF7D29;
+    transform: scale(1.2);
+}
+
+.social-icon {
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px; /* Spacing between icons */
+    color: #222222; /* Icon color */
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #FF7D29; /* Change color on hover */
+}
+
+/* Remove any extra decorations, dashes, or borders */
+.social-icon i {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* To remove the underline in social media actions */
+a {
+    text-decoration: none;
+}
+/* END OF FOOTER */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    /* Make sure the image banner section and logo resize properly on smaller screens */
+    .image-banner-section img.banner-image {
+        max-height: 150px; /* Restrict minimum height */
+    }
+    .about-content img {
+        width: 200px;
+    }
+    .about-content {
+        padding: 0 10px;
+    }
+    .about-logo img {
+        width: 120px; /* Smaller logo on mobile */
+        margin-bottom: 10px;
+    }
+    .about-section h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+      
+    .about-section p {
+        font-size: 0.55rem;
+        font-weight: 400;
+    }
+
+    .intro-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 0.7rem; /* Even smaller paragraph text for mobile */
+    }
+
+    .mission-vision-section .row {
+        flex-direction: column; /* Stack the columns on mobile */
+    }
+
+    .mission-vision-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .mission-vision-section p {
+        font-size: 0.9rem;
+    }
+
+    .accreditation-section h2 {
+        font-size: 2rem;
+    }
+
+    .accreditation-section ul {
+        font-size: 0.8rem; /* Smaller text for accreditation items */
+    }
+
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .accreditation-logo {
+        width: 60px; /* Make accreditation logos even smaller */
+    }
+}
