@@ -208,6 +208,46 @@ header {
   background-color: #d16f2d;
 }
 
+.video-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Inclusions List Styling */
+.inclusions-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 40px;
+}
+
+.inclusions-list li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Font Awesome Icons */
+.inclusions-list li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6482AD;
+  font-size: 18px;
+}
+
 .content {
   padding: 0 18px;
   max-height: 0;
